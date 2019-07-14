@@ -8,10 +8,10 @@
       <UniqueIdentifier>{5DEF92FE-4952-22A3-F2D7-5A59DE19EE25}</UniqueIdentifier>
     </Filter>
     <Filter Include="Hazel\Platforms">
-      <UniqueIdentifier>{2478458b-5788-4866-a17e-0ac8b4e6ce9c}</UniqueIdentifier>
+      <UniqueIdentifier>{20847270-8C0F-E034-9520-6329012B3C35}</UniqueIdentifier>
     </Filter>
     <Filter Include="Hazel\Platforms\Windows">
-      <UniqueIdentifier>{cbea8a87-bf83-47e6-b69e-1a5601108d2a}</UniqueIdentifier>
+      <UniqueIdentifier>{5A4E5202-C685-9A99-CF8F-FEBC3B46C192}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -37,27 +37,39 @@
     <ClInclude Include="src\Hazel\Events\MouseEvent.h">
       <Filter>Hazel\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\Hazel\Log.h">
+    <ClInclude Include="src\Hazel\Layer.h">
       <Filter>Hazel</Filter>
     </ClInclude>
-    <ClInclude Include="src\hzpch.h" />
-    <ClInclude Include="src\Hazel\Window.h">
+    <ClInclude Include="src\Hazel\LayerStack.h">
+      <Filter>Hazel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hazel\Log.h">
       <Filter>Hazel</Filter>
     </ClInclude>
     <ClInclude Include="src\Hazel\Platforms\Windows\WindowsWindow.h">
       <Filter>Hazel\Platforms\Windows</Filter>
     </ClInclude>
+    <ClInclude Include="src\Hazel\Window.h">
+      <Filter>Hazel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hzpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Hazel\Application.cpp">
       <Filter>Hazel</Filter>
     </ClCompile>
+    <ClCompile Include="src\Hazel\Layer.cpp">
+      <Filter>Hazel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hazel\LayerStack.cpp">
+      <Filter>Hazel</Filter>
+    </ClCompile>
     <ClCompile Include="src\Hazel\Log.cpp">
       <Filter>Hazel</Filter>
     </ClCompile>
-    <ClCompile Include="src\hzpch.cpp" />
     <ClCompile Include="src\Hazel\Platforms\Windows\WindowsWindow.cpp">
       <Filter>Hazel\Platforms\Windows</Filter>
     </ClCompile>
+    <ClCompile Include="src\hzpch.cpp" />
   </ItemGroup>
 </Project>
