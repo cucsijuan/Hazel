@@ -7,8 +7,14 @@
     <Filter Include="Hazel\Events">
       <UniqueIdentifier>{5DEF92FE-4952-22A3-F2D7-5A59DE19EE25}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Hazel\ImGui">
+      <UniqueIdentifier>{83AD5E9B-EF62-D790-7857-D167E40BCE94}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Hazel\Platforms">
       <UniqueIdentifier>{20847270-8C0F-E034-9520-6329012B3C35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hazel\Platforms\OpenGL">
+      <UniqueIdentifier>{54498D98-4043-B6EA-29B0-4CFB15491C57}</UniqueIdentifier>
     </Filter>
     <Filter Include="Hazel\Platforms\Windows">
       <UniqueIdentifier>{5A4E5202-C685-9A99-CF8F-FEBC3B46C192}</UniqueIdentifier>
@@ -37,6 +43,9 @@
     <ClInclude Include="src\Hazel\Events\MouseEvent.h">
       <Filter>Hazel\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Hazel\ImGui\ImGuiLayer.h">
+      <Filter>Hazel\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Hazel\Layer.h">
       <Filter>Hazel</Filter>
     </ClInclude>
@@ -53,10 +62,16 @@
       <Filter>Hazel</Filter>
     </ClInclude>
     <ClInclude Include="src\hzpch.h" />
+    <ClInclude Include="src\Hazel\Platforms\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Hazel\Platforms\OpenGL</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Hazel\Application.cpp">
       <Filter>Hazel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hazel\ImGui\ImGuiLayer.cpp">
+      <Filter>Hazel\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\Hazel\Layer.cpp">
       <Filter>Hazel</Filter>
@@ -71,5 +86,8 @@
       <Filter>Hazel\Platforms\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\hzpch.cpp" />
+    <ClCompile Include="src\Hazel\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Hazel\Platforms\OpenGL</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
