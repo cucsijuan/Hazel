@@ -61,6 +61,9 @@
     <ClInclude Include="src\Hazel\Platforms\OpenGL\ImGuiOpenGLRenderer.h">
       <Filter>Hazel\Platforms\OpenGL</Filter>
     </ClInclude>
+    <ClInclude Include="src\Hazel\Platforms\Windows\WindowsInput.h">
+      <Filter>Hazel\Platforms\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\Hazel\Platforms\Windows\WindowsWindow.h">
       <Filter>Hazel\Platforms\Windows</Filter>
     </ClInclude>
@@ -68,7 +71,8 @@
       <Filter>Hazel</Filter>
     </ClInclude>
     <ClInclude Include="src\hzpch.h" />
-    <ClInclude Include="src\Hazel\Platforms\Windows\WindowsInput.h" />
+    <ClInclude Include="src\Hazel\KeyCodes.h" />
+    <ClInclude Include="src\Hazel\MouseButtonCodes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Hazel\Application.cpp">
@@ -89,10 +93,12 @@
     <ClCompile Include="src\Hazel\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp">
       <Filter>Hazel\Platforms\OpenGL</Filter>
     </ClCompile>
+    <ClCompile Include="src\Hazel\Platforms\Windows\WindowsInput.cpp">
+      <Filter>Hazel\Platforms\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\Hazel\Platforms\Windows\WindowsWindow.cpp">
       <Filter>Hazel\Platforms\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\hzpch.cpp" />
-    <ClCompile Include="src\Hazel\Platforms\Windows\WindowsInput.cpp" />
   </ItemGroup>
 </Project>
