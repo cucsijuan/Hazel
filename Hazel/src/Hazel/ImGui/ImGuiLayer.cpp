@@ -52,7 +52,7 @@ namespace Hazel {
 
 		// Setup Platform/Renderer bindings
 		ImGui_ImplGlfw_InitForOpenGL(window, true);
-		ImGui_ImplOpenGL3_Init("version 410");
+		ImGui_ImplOpenGL3_Init("#version 410");
 	}
 
 	void ImGuiLayer::OnDetach()
@@ -64,7 +64,8 @@ namespace Hazel {
 
 	void ImGuiLayer::OnImGuiRender()
 	{
-
+		static bool show = true;
+		ImGui::ShowDemoWindow(&show);
 	}
 
 	void ImGuiLayer::Begin()
@@ -80,7 +81,7 @@ namespace Hazel {
 		Application& app = Application::Get();
 		io.DisplaySize = ImVec2(app.GetWindow().GetWidth(), app.GetWindow().GetHeight());
 
-		//rendering
+		// Rendering
 		ImGui::Render();
 		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
